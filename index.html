@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="no-js">
-<head>
+<html lang="zh-CN" class="js"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light only">
@@ -339,17 +338,17 @@
 </style>
 </head>
 <body>
-<div id="progress"></div>
+<div id="progress" style="width: 23.3146%;"></div>
 
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="#top">田<b>秘</b> · 简历</a>
     <div class="nav-links">
-      <a href="#sec-profile" data-nav="sec-profile">简介</a>
-      <a href="#sec-stats" data-nav="sec-stats">核心数据</a>
-      <a href="#sec-skills" data-nav="sec-skills">技能</a>
-      <a href="#sec-work" data-nav="sec-work">工作经历</a>
-      <a href="#sec-projects" data-nav="sec-projects">项目经历</a>
+      <a href="#sec-profile" data-nav="sec-profile" class="">简介</a>
+      <a href="#sec-stats" data-nav="sec-stats" class="">核心数据</a>
+      <a href="#sec-skills" data-nav="sec-skills" class="active">技能</a>
+      <a href="#sec-work" data-nav="sec-work" class="">工作经历</a>
+      <a href="#sec-projects" data-nav="sec-projects" class="">项目经历</a>
       <a href="#sec-edu" data-nav="sec-edu">教育</a>
       <button class="btn-print" onclick="window.print()">下载 PDF</button>
     </div>
@@ -370,8 +369,8 @@
         </div>
       </div>
       <div class="contact">
-        <span><span class="ic">📱</span>请填写电话</span>
-        <span><span class="ic">✉️</span>请填写邮箱</span>
+        <span><span class="ic">📱</span>17830386382</span>
+        <span><span class="ic">✉️</span>34072885@qq.com</span>
         <span><span class="ic">🎓</span>统招本科 · 2025.6 毕业</span>
       </div>
     </div>
@@ -381,8 +380,8 @@
 
     <!-- ===================== 个人简介 ===================== -->
     <div class="section" id="sec-profile">
-      <div class="section-title reveal">个人简介</div>
-      <div class="profile reveal">
+      <div class="section-title reveal in">个人简介</div>
+      <div class="profile reveal in">
         <p>2025 届统招本科，具备 1 年 AI 开发实习经验，聚焦大模型在业务场景中的落地实践。主导智能客服、GraphRAG 知识增强等项目，成功将意图识别 F1 提升至 <span class="hl">0.93</span>、幻觉率降至 <span class="hl">0.8%</span>。熟悉 RAG、GraphRAG、Agent、Tool Calling 等方案设计与工程实现，具备语音识别、多语言交互、知识增强问答、智能标注等完整项目经验，能够独立完成从模型接入、检索增强、服务封装到性能优化的全链路建设。同时具备 Python 后端全链路优化与 Docker 部署能力，关注系统稳定性、吞吐能力与可扩展性，致力于推动 AI 能力从「可用」走向「可落地、可执行、可持续迭代」。</p>
         <p class="lead">主导老年 AI 语音助手 16 意图多轮对话系统与端云协同意图模型训练落地，将生产意图识别准确率提升至 99.75%、识别耗时从 24.6s 降至 2.7s，具备 SFT/LoRA/QLoRA 微调与 MobileBERT 等端侧轻量模型部署能力。</p>
       </div>
@@ -390,34 +389,34 @@
 
     <!-- ===================== 核心数据 ===================== -->
     <div class="section" id="sec-stats">
-      <div class="section-title reveal">核心数据</div>
+      <div class="section-title reveal in">核心数据</div>
       <div class="stats">
-        <div class="stat reveal" data-count>
+        <div class="stat reveal in" data-count="">
           <div class="num-wrap"><span class="num" data-target="99.75">99.75</span><span class="num-suffix">%</span></div>
           <div class="label">生产意图识别准确率</div>
           <div class="trend">▲ Prompt 迭代 97.75% → 99.75%，耗时 24.6s → 2.7s</div>
         </div>
-        <div class="stat reveal d1" data-count>
+        <div class="stat reveal d1 in" data-count="">
           <div class="num-wrap"><span class="num" data-target="6">6</span><span class="num-suffix"> 种</span></div>
           <div class="label">训练评测的模型架构</div>
           <div class="trend">▲ FastText / MobileBERT / TinyBERT / LIDSNet / 双塔 / Qwen LoRA</div>
         </div>
-        <div class="stat reveal d2" data-count>
+        <div class="stat reveal d2 in" data-count="">
           <div class="num-wrap"><span class="num" data-target="20">20</span><span class="num-suffix"> 万+</span></div>
           <div class="label">训练样本累计规模</div>
           <div class="trend">▲ 意图 9,469 + 情绪 190,337</div>
         </div>
-        <div class="stat reveal" data-count>
+        <div class="stat reveal in" data-count="">
           <div class="num-wrap"><span class="num" data-target="130">130</span><span class="num-suffix">MB</span></div>
           <div class="label">端侧意图模型体积</div>
           <div class="trend">▲ MobileBERT 91.21% 准确率，CPU 推理约 15ms</div>
         </div>
-        <div class="stat reveal d1" data-count>
+        <div class="stat reveal d1 in" data-count="">
           <div class="num-wrap"><span class="num-prefix">F1 </span><span class="num" data-target="0.93">0.93</span></div>
           <div class="label">智能客服意图识别</div>
           <div class="trend">▲ 难负样本挖掘迭代 0.82 → 0.93</div>
         </div>
-        <div class="stat reveal d2" data-count>
+        <div class="stat reveal d2 in" data-count="">
           <div class="num-wrap"><span class="num" data-target="0.8">0.8</span><span class="num-suffix">%</span></div>
           <div class="label">GraphRAG 系统幻觉率</div>
           <div class="trend">▲ 多层幻觉检测链路，复杂查询延迟 4.8s → 2.1s</div>
@@ -427,29 +426,29 @@
 
     <!-- ===================== 核心技能 ===================== -->
     <div class="section" id="sec-skills">
-      <div class="section-title reveal">核心技能</div>
+      <div class="section-title reveal in">核心技能</div>
       <div class="skills">
-        <div class="skill reveal">
+        <div class="skill reveal in">
           <h4><span class="dot"></span>大模型微调与训练</h4>
           <p>熟悉 <b>SFT/LoRA/QLoRA</b> 参数高效微调（Qwen 系列）、<b>Unsloth</b> 训练框架与 4-bit 量化；具备 <b>FastText、MobileBERT、TinyBERT</b> 等轻量模型训练与端侧部署经验，掌握 <b>FGM 对抗训练、R-Drop、EMA、SWA</b> 等训练技巧与 Focal Loss、过采样等类别不平衡处理方案。</p>
         </div>
-        <div class="skill reveal d1">
+        <div class="skill reveal d1 in">
           <h4><span class="dot"></span>大模型应用开发</h4>
           <p>熟悉 <b>OpenAI、DeepSeek、通义千问、Ollama</b> 等模型接入，具备 <b>Prompt Engineering、Tool Calling、Agent 工作流设计</b>经验。</p>
         </div>
-        <div class="skill reveal d2">
+        <div class="skill reveal d2 in">
           <h4><span class="dot"></span>知识增强与智能体</h4>
           <p>熟悉 <b>RAG、GraphRAG</b>、企业知识库构建、多轮问答、意图识别、任务规划与工具编排。</p>
         </div>
-        <div class="skill reveal">
+        <div class="skill reveal in">
           <h4><span class="dot"></span>Python 后端开发</h4>
           <p>熟悉 <b>FastAPI、Flask、Pydantic</b>，能够完成 API 服务封装、参数校验、异步编排与模块化开发。</p>
         </div>
-        <div class="skill reveal d1">
+        <div class="skill reveal d1 in">
           <h4><span class="dot"></span>工程优化能力</h4>
           <p>掌握 <b>asyncio、线程池隔离、缓存设计、Redis、模型预热、热点结果缓存</b>等性能优化方案。</p>
         </div>
-        <div class="skill reveal d2">
+        <div class="skill reveal d2 in">
           <h4><span class="dot"></span>数据 · 存储 · 部署协作</h4>
           <p>熟悉 <b>MySQL、PostgreSQL、Neo4j、Redis、Linux、Git、Docker、Nginx</b>，具备结构化与非结构化数据处理、服务部署与日志排查能力。</p>
         </div>
@@ -458,13 +457,13 @@
 
     <!-- ===================== 工作经历 ===================== -->
     <div class="section" id="sec-work">
-      <div class="section-title reveal">工作经历</div>
-      <div class="timeline" id="timeline">
+      <div class="section-title reveal in">工作经历</div>
+      <div class="timeline" id="timeline" style="--tl-progress: 0.23507600283572058;">
 
-        <div class="job reveal">
+        <div class="job reveal in lit">
           <div class="job-head">
             <div class="job-title"><span class="co">北京银晖时光科技有限公司成都分公司</span><span class="sep">｜</span>AI 大模型算法工程师</div>
-            <div class="job-date">请填写起止时间</div>
+            <div class="job-date">2026/06 - 2026/09</div>
           </div>
           <div class="job-role">面向 AI 语音助手场景 · 大模型微调 / 端侧部署 / RAG 知识库全链路</div>
           <ul>
@@ -476,7 +475,7 @@
           </ul>
         </div>
 
-        <div class="job reveal">
+        <div class="job reveal in lit">
           <div class="job-head">
             <div class="job-title"><span class="co">港智科教育科技（深圳）有限公司</span><span class="sep">｜</span>AI 开发工程师</div>
             <div class="job-date">2025/03 - 2026/03</div>
@@ -488,7 +487,7 @@
           </ul>
         </div>
 
-        <div class="job reveal">
+        <div class="job reveal lit in">
           <div class="job-head">
             <div class="job-title"><span class="co">广东喜讯科技有限公司</span><span class="sep">｜</span>运维工程师</div>
             <div class="job-date">2023/05 - 2023/09</div>
@@ -498,7 +497,7 @@
           </ul>
         </div>
 
-        <div class="job reveal">
+        <div class="job reveal in lit">
           <div class="job-head">
             <div class="job-title"><span class="co">腾云悦智科技有限责任公司</span><span class="sep">｜</span>云计算运维工程师</div>
             <div class="job-date">2022/02 - 2022/06</div>
@@ -513,10 +512,10 @@
 
     <!-- ===================== 项目经历 ===================== -->
     <div class="section" id="sec-projects">
-      <div class="section-title reveal">项目经历</div>
+      <div class="section-title reveal in">项目经历</div>
 
       <!-- 项目 1 -->
-      <div class="project c1 reveal">
+      <div class="project c1 reveal in">
         <div class="proj-head">
           <div class="proj-title">老年 AI 语音助手 · 意图识别与多轮对话系统</div>
           <div class="proj-role">核心开发 · 意图链路独立负责</div>
@@ -544,7 +543,7 @@
       </div>
 
       <!-- 项目 2 -->
-      <div class="project c2 reveal">
+      <div class="project c2 reveal in">
         <div class="proj-head">
           <div class="proj-title">端侧意图识别 · 多架构模型训练与选型（含 LLM LoRA 微调）</div>
           <div class="proj-role">独立完成 · 训练 / 评测 / 选型全流程</div>
@@ -572,7 +571,7 @@
       </div>
 
       <!-- 项目 3 -->
-      <div class="project c3 reveal">
+      <div class="project c3 reveal in">
         <div class="proj-head">
           <div class="proj-title">智能客服 Agent 系统</div>
           <div class="proj-role">核心模块负责 · Multi-Agent 落地</div>
@@ -600,7 +599,7 @@
       </div>
 
       <!-- 项目 4 -->
-      <div class="project c4 reveal">
+      <div class="project c4 reveal in">
         <div class="proj-head">
           <div class="proj-title">GraphRAG 知识增强系统</div>
           <div class="proj-role">全流程设计实现</div>
@@ -622,7 +621,7 @@
       </div>
 
       <!-- 项目 5 -->
-      <div class="project c5 reveal">
+      <div class="project c5 reveal in">
         <div class="proj-head">
           <div class="proj-title">语音识别与多语言交互中台</div>
           <div class="proj-role">服务封装与性能优化</div>
@@ -645,7 +644,7 @@
       </div>
 
       <!-- 项目 6 -->
-      <div class="project c6 reveal">
+      <div class="project c6 reveal in">
         <div class="proj-head">
           <div class="proj-title">教育试卷数据智能标注系统</div>
           <div class="proj-role">平台搭建与流程设计</div>
@@ -794,5 +793,6 @@
   }
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>
